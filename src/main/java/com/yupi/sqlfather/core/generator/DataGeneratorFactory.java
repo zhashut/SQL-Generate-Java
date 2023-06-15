@@ -22,6 +22,7 @@ public class DataGeneratorFactory {
         put(MockTypeEnum.NONE, new DefaultDataGenerator());
         put(MockTypeEnum.FIXED, new FixedDataGenerator());
         put(MockTypeEnum.INCREASE, new IncreaseDataGenerator());
+        put(MockTypeEnum.DICT, new DictDataGenerator());
     }};
 
     private DataGeneratorFactory() {

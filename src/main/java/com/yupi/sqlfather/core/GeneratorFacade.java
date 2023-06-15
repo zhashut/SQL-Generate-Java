@@ -42,7 +42,7 @@ public class GeneratorFacade {
         String createSql = sqlBuilder.buildCreateTableSql(tableSchema);
         int mockNum = tableSchema.getMockNum();
         // 生成模拟数据
-        List<Map<String, Object>> dataList = DataBuilder.generateData(tableSchema, mockNum);
+        List<Map<String, Object>> dataList = DataBuilder.   generateData(tableSchema, mockNum);
         // 生成插入 SQL
         String insertSql = sqlBuilder.buildInsertSql(tableSchema, dataList);
         // 生成数据 json
